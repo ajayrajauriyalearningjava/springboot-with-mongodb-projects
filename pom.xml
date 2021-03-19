@@ -15,6 +15,8 @@
 	<name>spring-boot-mongodb</name>
 	<description>Spring Boot With MongoDB </description>
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.release>11</maven.compiler.release>
 		<java.version>11</java.version>
 	</properties>
 	<dependencies>
