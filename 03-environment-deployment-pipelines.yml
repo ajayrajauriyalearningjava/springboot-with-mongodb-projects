@@ -1,0 +1,20 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+
+trigger:
+- master
+
+strategy:
+  matrix:
+    linux:
+      operatingSystem: 'ubuntu-latest'
+    mac:
+      operatingSystem: 'macos-latest'
+
+pool:
+  vmImage: $(operatingSystem)
+
+steps:
+- script: echo Running on $(operatingSystem)
+  displayName: 'Run a one-line script'
+
